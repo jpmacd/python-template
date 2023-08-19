@@ -1,2 +1,2 @@
-DEBUG=False
-LOG_DIR="./logs/"
+DEBUG = False
+LOG_DIR = "./logs/"

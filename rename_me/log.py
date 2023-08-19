@@ -1,7 +1,6 @@
 import logging
 
-from .config import LOG_DIR
-from .config import DEBUG
+from .confing import LOG_DIR, DEBUG
     
 def get_logger(name: str) -> logging.Logger:
     logger = logging.getLogger(name)
