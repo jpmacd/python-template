@@ -44,3 +44,10 @@ def log_factory(name: Optional[str]) -> logging.Logger:
     _logger_.add_file_handler()
     _logger_.basic_config()
     return _logger_.get_logger()
+
+
+logging.basicConfig(
+    format="[%(asctime)s][%(levelname)s][%(name)s:%(funcName)s:%(lineno)d] %(message)s",
+)
+logging.getLogger("sqlalchemy.engine").setLevel(logging.WARNING)
+logging.getLogger("sqlalchemy.pool").setLevel(logging.WARNING)

@@ -1,14 +1,7 @@
-import logging
 from os import getenv
 from sqlalchemy import Boolean, Column, Integer, String, TIMESTAMP, create_engine
 from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy.orm import sessionmaker
-
-logging.basicConfig(
-    format="[%(asctime)s][%(levelname)s][%(name)s:%(funcName)s:%(lineno)d] %(message)s",
-)
-logging.getLogger("sqlalchemy.engine").setLevel(logging.WARNING)
-logging.getLogger("sqlalchemy.pool").setLevel(logging.WARNING)
 
 
 class Base(DeclarativeBase):
