@@ -9,6 +9,5 @@
 !CHANGELOG.md
 !tests/
 !tests/*.py
-!main.py
 !rename_me/
 !rename_me/*.py
